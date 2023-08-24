@@ -6,6 +6,8 @@ const app = express()
 
 const port = process.env.PORT || 5000
 
+
+
 //on utilise les middleware avec la methode use()
 app.use("/api/contacts", require("./routes/contactRoutes"))
 
