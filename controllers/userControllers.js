@@ -38,7 +38,6 @@ const registerUser = asyncHandler(async ( req, res)=>{
         res.status(400)
         throw new Error("User data us not valid")
     }
-
     
     res.json({message : "Register the user"})
 })
@@ -47,7 +46,7 @@ const registerUser = asyncHandler(async ( req, res)=>{
 //@route POST /api/users/login
 //@acces public
 const loginUser = asyncHandler(async ( req, res)=>{
-    const { email, password} = req.body
+    const { email, password } = req.body
     if(!email || !password){
         res.status(400)
         throw new Error("All fields are mandatory !")
