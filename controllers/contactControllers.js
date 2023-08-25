@@ -41,8 +41,7 @@ const createContact = asyncHandler(async (req,res)=>{
         email, 
         phone
     })
-
-    //await contact.save()
+ 
     res.status(201).json(contact)
 })
 
