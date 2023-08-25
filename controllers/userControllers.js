@@ -80,7 +80,7 @@ const loginUser = asyncHandler(async ( req, res)=>{
 //@route GET /api/users/current
 //@acces private
 const currentUser = asyncHandler(async ( req, res)=>{
-    res.json({message : "Current user"})
+    res.json(req.user)
 })
 
 
